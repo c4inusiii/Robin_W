@@ -1,0 +1,1240 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: "Sen", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Sen", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 5vw;
+}
+
+/* Header */
+.header__inner {
+  padding-top: 32px;
+  display: flex;
+}
+
+.header-logo {
+  margin-right: auto;
+  max-width: 78px;
+}
+
+.menu_btn {
+  display: none;
+  width: 5vw;
+  height: clamp(0.75rem, 0.563rem + 0.83vw, 0.875rem);
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.menu_btn--span {
+  background-color: #c4c4c4;
+  height: 3px;
+  width: 100%;
+}
+
+.menu_btn--span:last-child {
+  width: 3.6vw;
+  margin-left: auto;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 0 48px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__nav-item:last-child {
+  background-color: #5221e6;
+  margin-top: -32px;
+  padding: 32px 24px;
+
+  font-weight: 700;
+}
+
+/*Main*/
+.self-presentation {
+  padding: 80px 0;
+  display: flex;
+}
+
+.header,
+.self-presentation {
+  background: linear-gradient(to right, #000000 40%, #181823 0);
+}
+
+.robin_williams--768 {
+  display: none;
+}
+
+.presentation__description {
+  margin-top: 141px;
+  position: absolute;
+  left: 586px;
+  right: 10px;
+  z-index: 2;
+  max-width: 738px;
+}
+
+.presentation__description span {
+  opacity: 0.5;
+}
+
+.text {
+  font-weight: 400;
+  font-size: clamp(0.875rem, -0.153rem + 1.63vw, 1.313rem);
+  line-height: clamp(1.5rem, 0.326rem + 1.86vw, 2rem);
+  color: #8491a0;
+}
+
+.presentation__description-text {
+  color: #fff;
+}
+
+.work__experience {
+  margin-top: 8.3vw;
+
+  font-weight: 700;
+}
+
+.suptitle {
+  color: #8491a0;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/*.work__experience-suptitle {
+	color: #8491A0;
+	font-size: 16px;
+	margin-bottom: 8px;
+}*/
+
+.title {
+  font-size: clamp(2.5rem, 2.186rem + 1.39vw, 3.438rem);
+  line-height: clamp(2.5rem, 1.956rem + 2.41vw, 4.125rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.presentation__description-title {
+  font-weight: 700;
+  font-size: clamp(2.25rem, -0.758rem + 6.26vw, 4.875rem);
+  line-height: clamp(2.75rem, -0.831rem + 7.45vw, 5.875rem);
+  margin-bottom: 32px;
+}
+
+.work__experience-title {
+  max-width: 690px;
+  margin-bottom: 40px;
+}
+
+.work__experience-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.work__experience--item {
+  flex-basis: 416px;
+}
+
+.work__experience--item-num {
+  font-weight: 400;
+  font-size: 117px;
+  line-height: 141px;
+  color: #8491a0;
+}
+
+.item-title {
+  font-size: clamp(1.5rem, 0.938rem + 0.63vw, 1.688rem);
+  line-height: clamp(1.75rem, 1.499rem + 0.83vw, 2.25rem);
+}
+
+.work__experience--item-title {
+  margin-bottom: 22px;
+  max-width: 339px;
+}
+
+.work__experience--item:first-child span {
+  color: #3cc74e;
+}
+
+.work__experience--item:last-child span {
+  color: #e95d90;
+}
+
+.work__experience--item:nth-child(even) span {
+  color: #5221e6;
+}
+
+.work__experience--item-text {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.25rem + 0.83vw, 1.25rem);
+  color: #8491a0;
+  max-width: 368px;
+}
+
+.work__experience-numeration {
+  margin-bottom: 120px;
+}
+
+.philosophy {
+  display: flex;
+}
+
+.left-side {
+  background-color: #fff3e4;
+  color: #181823;
+  width: 50%;
+  margin-right: auto;
+}
+
+.philosophy_description {
+  margin-top: 8.3vw;
+}
+
+.philosophy-title,
+.instagram-title {
+  margin-bottom: 24px;
+}
+
+.philosophy-title {
+  font-size: clamp(2.5rem, 2.03rem + 1.56vw, 3.438rem);
+}
+
+.philosophy-text {
+  max-width: 576px;
+}
+
+.philosophy-text,
+.instagram-text {
+  line-height: clamp(1.5rem, 0.326rem + 1.86vw, 2rem);
+  color: #5b6876;
+  margin-bottom: 134px;
+}
+
+.link {
+  font-size: clamp(1rem, 0.25rem + 0.83vw, 1.25rem);
+  line-height: 24px;
+  border-bottom: 1px solid #8491a0;
+  max-width: clamp(7.5rem, 2.813rem + 5.21vw, 9.063rem);
+  padding-bottom: 3px;
+}
+
+.right-side {
+  width: 50%;
+}
+
+.right-side__image img {
+  width: 100%;
+  height: 600px;
+}
+
+.philosophy-image-768,
+.instagram-image-768 {
+  display: none;
+}
+
+.left-side,
+.right-side {
+  max-height: 600px;
+}
+
+.skillset {
+  margin-top: 120px;
+}
+
+.skillset-wrapper {
+  display: flex;
+}
+
+.skillset__description-side {
+  margin-right: 5vw;
+}
+
+.skillset__title {
+  margin-bottom: 24px;
+}
+
+.skillset__text {
+  width: 368px;
+  color: #8491a0;
+}
+
+.skillset__list-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: clamp(1.25rem, 0.961rem + 1.28vw, 2.5rem);
+}
+
+.skillset__list-text {
+  font-size: clamp(1rem, 0.25rem + 0.83vw, 1.25rem);
+  line-height: clamp(1.5rem, 0.938rem + 0.63vw, 1.688rem);
+}
+
+.skillset__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 48px 24px;
+}
+
+.skillset__list-img {
+  margin-bottom: 24px;
+}
+
+.skillset__list-text {
+  color: #8491a0;
+}
+
+.partners {
+  margin: 120px 3.5vw;
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.partners__list--item {
+  padding: 55px 0.1vw;
+  border: 1px solid #181823;
+  max-width: 23.6vw;
+  text-align: center;
+}
+
+.partner-5,
+.partner-6 {
+  display: none;
+}
+
+.projects {
+  margin-bottom: 8.3vw;
+}
+
+.projects-description__title {
+  max-width: 39.8vw;
+  margin-bottom: 80px;
+  margin-right: 88px;
+}
+
+.projects-list__ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.projects-list__item {
+  max-width: 44.1vw;
+}
+
+.projects-list__item:nth-child(even) {
+  margin-top: -244px;
+}
+
+.projects-list__item img {
+  width: 100%;
+}
+
+.project--item_description {
+  max-width: 100%;
+  background-color: #181823;
+  margin-top: -7px;
+  padding: 40px 32px;
+}
+
+.project--item__text {
+  max-width: 39.7vw;
+  margin-top: 13px;
+}
+
+.project__btn--wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 65px;
+}
+
+.project__btn {
+  font-family: "Sen", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 24px 32px;
+  border: 1px solid #5221e6;
+}
+
+.instagram {
+  display: flex;
+}
+
+.instagram__left-side {
+  background-color: #fbe4ff;
+}
+
+.instagram_description {
+  padding: 120px 0;
+  margin-right: 5vw;
+}
+
+.instagram-text {
+  max-width: 576px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.instagram-link {
+  max-width: clamp(8.125rem, 3.438rem + 5.21vw, 9.688rem);
+}
+
+.drible {
+  margin: 8.3vw 7.6vw 16.7vw;
+}
+
+.drible__text {
+  max-width: 44.1vw;
+  margin-bottom: 40px;
+}
+
+.drible__link {
+  max-width: clamp(10.938rem, 2.5rem + 9.38vw, 13.75rem);
+  margin-bottom: 120px;
+}
+
+.drible__image {
+  display: flex;
+  justify-content: center;
+}
+
+.drible__image-1440px {
+  width: 100%;
+}
+
+.drible__image-360px {
+  display: none;
+}
+
+.people__opinion-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.7vw;
+}
+
+.people__opinion--description,
+.people__opinion--images {
+  max-width: 50vw;
+}
+
+.people__opinion--title,
+.people__opinion--text {
+  max-width: 40.8vw;
+}
+
+.people__opinion--text {
+  margin-bottom: 40px;
+}
+
+.people__opinion--link {
+  max-width: clamp(10rem, 4.375rem + 6.25vw, 11.875rem);
+}
+
+.people__opinion--item {
+  margin-bottom: 120px;
+}
+
+.people__opinion--item__description,
+.people__opinion--image {
+  max-width: 100%; /* doesn't applies to .people__opinion--item__description */
+  width: auto;
+}
+
+.people__opinion--item__description {
+  margin-top: -6px;
+  padding: 64px;
+  border: 1px solid #5b6876;
+  max-width: 636px;
+  font-size: 24px;
+  height: auto;
+}
+
+.people__opinion--item__title,
+.people__opinion--cite {
+  max-width: 508px;
+}
+
+.people__opinion--item__title {
+  margin-bottom: 64px;
+}
+
+.people__opinion--cite {
+  color: #8491a0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.photography {
+  margin-top: 8.3vw;
+  margin-bottom: 16.7vw;
+}
+
+.photography-text {
+  max-width: 40.8vw;
+  margin-bottom: 64px;
+}
+
+.photography__switch--list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.photography__switch--btn {
+  color: #fff;
+  padding: 12px 16px;
+  border: 1px solid #5221e6;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 42.1vw;
+}
+
+.photography__switch--item:first-child {
+  background-color: #5221e6;
+}
+
+.photography__img--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.email {
+  margin: 0 7.6vw 120px;
+}
+
+.email--wrapper {
+  display: flex;
+  gap: 1.7vw;
+}
+
+.email__description {
+  margin-right: 1.7vw;
+}
+
+.email-text {
+  max-width: 36.5vw;
+}
+
+.email__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+}
+
+.email__form--suptitle {
+  color: #fff;
+}
+
+.input {
+  border: none;
+  background-color: #181823;
+  width: 36.5vw;
+  height: 50px;
+  color: #fff;
+}
+
+.message--input {
+  height: 100px;
+}
+
+.submit-btn {
+  width: 36.5vw;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  padding: 24px 12.2vw;
+  background-color: #5221e6;
+}
+
+.footer {
+  padding-top: 80px;
+  background-color: #181823;
+}
+
+.footer-sides {
+  display: flex;
+}
+
+.footer__left-side {
+  width: 29.6vw;
+}
+
+.footer-logos {
+  margin-bottom: 142px;
+}
+
+.footer__main-logo {
+  margin-bottom: 32px;
+}
+
+.social-media__logos--list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__copyright {
+  width: 100%;
+  padding-bottom: 80px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8491a0;
+  white-space: wrap;
+}
+
+.footer__right-side {
+  margin-left: 28.9vw;
+  margin-right: 12.6vw;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 0 24px;
+}
+
+.footer__nav--item {
+  margin-bottom: 24px;
+  font-size: clamp(1rem, 0.25rem + 0.83vw, 1.25rem);
+  white-space: nowrap;
+}
+
+.footer__nav--list {
+  width: 13.6vw;
+}
+
+@media (max-width: 1000px) {
+  .skillset-wrapper {
+    display: block;
+  }
+
+  .skillset__description-side {
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+
+  .skillset__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .self-presentation {
+    background: #000;
+  }
+
+  .robin_williams {
+    display: none;
+  }
+
+  .robin_williams--768 {
+    display: block;
+  }
+
+  .presentation__description {
+    max-width: 408px;
+    left: 320px;
+    right: 10px;
+  }
+
+  .presentation__description-title {
+    font-size: clamp(1.875rem, 1.037rem + 2.79vw, 2.375rem);
+    line-height: clamp(2.188rem, 1.245rem + 3.14vw, 2.75rem);
+  }
+
+  .text {
+    line-height: clamp(1.25rem, 0.326rem + 1.86vw, 2rem);
+  }
+
+  .work__experience {
+    margin-top: 10.4vw;
+  }
+
+  .work__experience-numeration {
+    margin-bottom: 80px;
+  }
+
+  .work__experience-list {
+    gap: 0 24px;
+  }
+
+  .work__experience--item {
+    flex-basis: 213px;
+  }
+
+  .work__experience--item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .philosophy_description {
+    margin-left: 0;
+    margin-top: 10.4vw;
+  }
+
+  .philosophy-text,
+  .instagram-text {
+    margin-bottom: 8.7vw;
+  }
+
+  .philosophy-text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .philosophy-image,
+  .instagram-image {
+    display: none;
+  }
+
+  .philosophy-image-768,
+  .instagram-image-768 {
+    display: block;
+  }
+
+  .skillset {
+    margin-top: 80px;
+  }
+
+  .skillset__list-text {
+    font-size: clamp(0.875rem, 0.764rem + 0.49vw, 1rem);
+    line-height: clamp(1.313rem, 1.146rem + 0.74vw, 1.5rem);
+    max-width: 284px;
+  }
+
+  .partners {
+    margin: 80px 0;
+  }
+
+  .partner-5,
+  .partner-6 {
+    display: block;
+  }
+
+  .partners-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners__list--item {
+    padding: 59px 0.1vw;
+    max-width: 50vw;
+  }
+
+  .projects {
+    margin-bottom: 4.1vw;
+  }
+
+  .projects-list__ul {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .projects-list__item {
+    max-width: 100%;
+  }
+
+  .projects-description__title {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .project--item__text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .projects-list__item:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .projects-list__item:last-child {
+    display: none;
+  }
+
+  .instagram_description {
+    margin-right: 0;
+    padding: 80px 0;
+  }
+
+  .instagram-text {
+    max-width: 304px;
+    margin-bottom: 133px;
+    font-size: clamp(1rem, 0.456rem + 1.39vw, 1.125rem);
+    line-height: clamp(1.5rem, 1.186rem + 1.05vw, 1.688rem);
+  }
+
+  .drible {
+    margin: 10.4vw 0 20.8vw;
+  }
+
+  .drible__text {
+    max-width: 688px;
+  }
+
+  .people__opinion--title,
+  .people__opinion--text {
+    max-width: 45vw;
+  }
+
+  .people__opinion--item__description {
+    padding: 32px;
+  }
+
+  .photography {
+    margin-top: 7.8vw;
+    margin-bottom: 20.8vw;
+  }
+
+  .photography-text {
+    max-width: 89.7vw;
+  }
+
+  .email {
+    margin: 0 0 80px;
+  }
+
+  .email--wrapper {
+    gap: 0;
+  }
+
+  .email-text {
+    max-width: 43.4vw;
+  }
+
+  .email__form {
+    max-width: 43.2vw;
+  }
+
+  .input,
+  .submit-btn {
+    width: 43.2vw;
+  }
+
+  .footer__left-side {
+    width: 42.8vw;
+  }
+
+  .footer__copyright {
+    width: 50%;
+  }
+
+  .footer__right-side {
+    margin-left: 3.4vw;
+    margin-right: 0;
+  }
+
+  .footer__nav--list {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 612px) {
+  .menu {
+    display: block;
+  }
+
+  .menu_btn {
+    display: flex;
+  }
+
+  .header__inner {
+    justify-content: center;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .work__experience-list {
+    flex-wrap: wrap;
+  }
+
+  .people__opinion-wrapper {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .people__opinion--description {
+    margin-bottom: 10vw;
+  }
+
+  .people__opinion--description,
+  .people__opinion--images,
+  .people__opinion--title,
+  .people__opinion--text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__nav {
+    display: block;
+  }
+
+  .footer__right-side {
+    margin-left: 13.4vw;
+  }
+
+  .footer__copyright {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .presentation__image-wrapper {
+    margin: 0 auto;
+  }
+
+  .robin_williams,
+  .robin_williams--768 {
+    width: 100%;
+  }
+
+  .self-presentation {
+    display: block;
+  }
+
+  .work__experience--item {
+    flex-basis: 100%;
+  }
+
+  .presentation__description {
+    position: relative;
+    margin: 13.3vw auto 0;
+    left: 0;
+    max-width: 88.9vw;
+    text-align: center;
+  }
+
+  .instagram {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .instagram_description {
+    padding: 13.3vw 0;
+  }
+
+  .instagram-text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .philosophy {
+    display: block;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    max-height: 600px;
+  }
+
+  .philosophy-link__wrapper {
+    padding-bottom: 50px;
+  }
+
+  .philosophy_description {
+    margin-top: 0;
+    padding-top: 13.3vw;
+  }
+
+  .philosophy-text {
+    margin-bottom: 25.2vw;
+  }
+
+  .skillset {
+    margin-top: 26.1vw;
+  }
+
+  .email-text {
+    min-width: 100%;
+  }
+
+  .email {
+    margin: 0 0 48px;
+  }
+
+  .email--wrapper {
+    display: block;
+  }
+
+  .email-text {
+    margin-bottom: 48px;
+  }
+
+  .email__form {
+    max-width: 100%;
+  }
+
+  .input,
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .robin_williams--768 {
+    display: none;
+  }
+
+  .self-presentation {
+    display: block;
+    padding: 24px 0 0;
+  }
+
+  .robin_williams {
+    display: block;
+    max-width: 360px;
+    height: 288px;
+  }
+
+  .presentation__description {
+    margin-top: 48px;
+    margin-bottom: 96px;
+    text-align: left;
+  }
+
+  .presentation__description-title {
+    max-width: 320px;
+  }
+
+  .text {
+    max-width: 320px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .projects-description__title {
+    margin-bottom: 22.2vw;
+  }
+
+  .presentation__description-text {
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .work__experience {
+    margin-top: 13.3vw;
+  }
+
+  .work__experience-list {
+    display: block;
+  }
+
+  .work__experience--item-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .work__experience-numeration {
+    margin-bottom: 8px;
+  }
+
+  .left-side,
+  .right-side {
+    min-height: 450px;
+  }
+
+  .right-side__image img {
+    height: 450px;
+  }
+
+  .philosophy-title {
+    max-width: 320px;
+    padding-top: 0;
+  }
+
+  .philosophy-text {
+    max-width: 320px;
+    margin-bottom: 80px;
+  }
+
+  .skillset {
+    margin-top: 17.8vw;
+  }
+
+  .skillset__description-side {
+    margin-bottom: 69px;
+  }
+
+  .skillset__title {
+    padding-top: 14px;
+  }
+
+  .skillset__text {
+    max-width: 320px;
+  }
+
+  .skillset__list {
+    grid-template-columns: 1fr;
+  }
+
+  .skillset__list-title {
+    font-size: 24px;
+  }
+
+  .partners__list--item img {
+    margin: auto;
+  }
+
+  .partner-5 img {
+    width: auto;
+  }
+
+  .instagram-text {
+    margin-bottom: 35vw;
+  }
+
+  .drible {
+    margin: 17.8vw 0 112px;
+  }
+
+  .drible__link {
+    margin-bottom: 64px;
+  }
+
+  .drible__image-1440px {
+    display: none;
+  }
+
+  .drible__image-360px {
+    width: 88.9vw;
+    display: block;
+    height: 516px;
+  }
+
+  .people__opinion--description {
+    height: 243px;
+    margin-bottom: 64px;
+  }
+
+  .people__opinion--title {
+    margin-bottom: 12px;
+  }
+
+  .people__opinion--link {
+    margin-bottom: 64px;
+  }
+
+  .people__opinion--item {
+    margin-bottom: 48px;
+  }
+
+  .photography {
+    margin-top: 48px;
+    margin-bottom: 26.7vw;
+  }
+
+  .photography-text {
+    margin-bottom: 40px;
+  }
+
+  .photography__switch--list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photography__switch--item:first-child {
+    background-color: transparent;
+  }
+
+  .italy {
+    padding: 12px 12.8vw;
+    background-color: #5221e6;
+  }
+
+  .australia {
+    padding: 12px 6.1vw;
+  }
+
+  .india {
+    padding: 12px 12.2vw;
+  }
+
+  .brazil {
+    padding: 12px 10.8vw;
+  }
+
+  .photography__img--item img {
+    width: 88.9vw;
+  }
+
+  .footer {
+    padding-top: 48px;
+  }
+
+  .footer-sides {
+    display: block;
+  }
+
+  .footer__right-side {
+    margin-top: -20vw;
+    margin-left: 0;
+  }
+
+  .footer__copyright {
+    width: 100%;
+    margin-top: 48px;
+    padding-bottom: 48px;
+  }
+}
